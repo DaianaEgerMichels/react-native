@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         lineHeight: 26,
         color: "white",
-        fontWeight: "bold",
+        fontFamily: "MontserratBold",
         padding: 16
     },
     basket: {
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
         color: "#464646",
         fontSize: 26,
         lineHeight: 42,
-        fontWeight: "bold"
+        fontFamily: "MontserratBold",
     },
     farm: {
         flexDirection: "row",
@@ -61,7 +61,8 @@ const styles = StyleSheet.create({
     nameFarm: {
         fontSize: 16,
         lineHeight: 26,
-        marginLeft: 12
+        marginLeft: 12,
+        fontFamily: "MontserratRegular"
     },
     imageFarm: {
         width: 32,
@@ -70,7 +71,7 @@ const styles = StyleSheet.create({
     description: {
         color: "#A3A3A3",
         fontSize: 16,
-        lineHeight: 26,
+        lineHeight: 26
     },
     price: {
         color: "#2A9F85",
