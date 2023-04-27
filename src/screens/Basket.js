@@ -1,8 +1,9 @@
 import React from "react";
-import { StyleSheet, Image, Dimensions, Text, View } from "react-native";
+import { StyleSheet, Image, Dimensions, View } from "react-native";
 
 import topo from "../../assets/topo.png";
 import logo from "../../assets/logo.png";
+import Texto from "../components/Texto";
 
 const width = Dimensions.get('screen').width;
 
@@ -10,20 +11,20 @@ export default function Basket() {
     return (
     <>
         <Image source={topo} style={styles.top} />
-        <Text style={styles.title}>Basket Detail</Text>
+        <Texto style={styles.title}>Basket Detail</Texto>
 
         <View style={styles.basket}>
-            <Text style={styles.name} >Basket of Vegetables</Text>
+            <Texto style={styles.name} >Basket of Vegetables</Texto>
             <View style={styles.farm}>
                 <Image source={logo} style={styles.imageFarm} />
-                <Text style={styles.nameFarm} >Little Farm</Text>
+                <Texto style={styles.nameFarm} >Little Farm</Texto>
             </View>
             
-            <Text style={styles.description} >
+            <Texto style={styles.description} >
                 A basket with products carefully 
                 selected from the farm straight to your kitchen
-            </Text>
-            <Text style={styles.price} >R$40,00</Text>
+            </Texto>
+            <Texto style={styles.price} >R$40,00</Texto>
         </View>
     </>
     ) 
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         lineHeight: 26,
         color: "white",
-        fontFamily: "MontserratBold",
+        fontWeight: "bold",
         padding: 16
     },
     basket: {
@@ -52,7 +53,7 @@ const styles = StyleSheet.create({
         color: "#464646",
         fontSize: 26,
         lineHeight: 42,
-        fontFamily: "MontserratBold",
+        fontWeight: "bold"
     },
     farm: {
         flexDirection: "row",
@@ -62,7 +63,6 @@ const styles = StyleSheet.create({
         fontSize: 16,
         lineHeight: 26,
         marginLeft: 12,
-        fontFamily: "MontserratRegular"
     },
     imageFarm: {
         width: 32,
