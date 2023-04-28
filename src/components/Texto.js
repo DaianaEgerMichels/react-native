@@ -20,4 +20,4 @@ const styles = StyleSheet.create({
         fontFamily: "MontserratBold",
         fontWeight: "normal"
     }
-})
+});
