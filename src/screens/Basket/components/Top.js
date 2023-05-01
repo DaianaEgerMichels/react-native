@@ -5,11 +5,11 @@ import { StyleSheet, Dimensions, Image} from "react-native";
 
 const width = Dimensions.get('screen').width;
 
-export default function Top() {
+export default function Top({title}) {
  return(
     <>
     <Image source={topo} style={styles.top} />
-    <Texto style={styles.title}>Basket Detail</Texto>
+    <Texto style={styles.title}>{title}</Texto>
     </>
  )
 }

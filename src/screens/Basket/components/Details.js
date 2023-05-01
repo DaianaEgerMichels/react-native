@@ -1,23 +1,21 @@
 import React from 'react';
 import { StyleSheet, Image, View } from "react-native";
 
-import logo from "../../../../assets/logo.png";
 import Texto from "../../../components/Texto";
 
-export default function Details() {
+export default function Details({name, nameFarm, imageFarm, description, price}) {
     return (
         <>
-        <Texto style={styles.name} >Basket of Vegetables</Texto>
+        <Texto style={styles.name} >{name}</Texto>
             <View style={styles.farm}>
-                <Image source={logo} style={styles.imageFarm} />
-                <Texto style={styles.nameFarm} >Little Farm</Texto>
+                <Image source={imageFarm} style={styles.imageFarm} />
+                <Texto style={styles.nameFarm} >{nameFarm}</Texto>
             </View>
             
             <Texto style={styles.description} >
-                A basket with products carefully 
-                selected from the farm straight to your kitchen
+                {description}
             </Texto>
-            <Texto style={styles.price} >R$40,00</Texto>
+            <Texto style={styles.price} >{price}</Texto>
         </>
     )
 }

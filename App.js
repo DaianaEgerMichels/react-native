@@ -1,6 +1,7 @@
 import { SafeAreaView, StatusBar, StyleSheet, View } from 'react-native';
 import Basket from './src/screens/Basket';
 import { useFonts, Montserrat_400Regular, Montserrat_700Bold } from '@expo-google-fonts/montserrat';
+import basket from './src/mocks/basket';
 
 export default function App() {
   const [fontLoaded] = useFonts({
@@ -15,7 +16,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar />
-      <Basket />
+      <Basket {...basket}/>
     </SafeAreaView>
   );
 }
