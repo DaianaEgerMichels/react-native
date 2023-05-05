@@ -9,7 +9,8 @@ const basket = {
         imageFarm: logo,
         nameFarm: "Little Farm",
         description: "A basket with products carefully selected from the farm straight to your kitchen",
-        price: "R$ 40,00"
+        price: "R$ 40,00",
+        button: "Buy"
     }
 }
 
