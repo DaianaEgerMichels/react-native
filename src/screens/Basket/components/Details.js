@@ -1,7 +1,8 @@
 import React from 'react';
-import { StyleSheet, Image, View, TouchableOpacity } from "react-native";
+import { StyleSheet, Image, View } from "react-native";
 
 import Texto from "../../../components/Texto";
+import Button from "../../../components/Button"
 
 export default function Details({name, nameFarm, imageFarm, description, price, button}) {
     return (
@@ -15,12 +16,10 @@ export default function Details({name, nameFarm, imageFarm, description, price, 
             <Texto style={styles.description} >
                 {description}
             </Texto>
-            <Texto style={styles.price} >{price}</Texto>
-            <TouchableOpacity style={styles.button} onPress={() => {console.log("Click")}}>
-                <Texto style={styles.textButton}>
-                    {button}
-                </Texto>
-            </TouchableOpacity> 
+            <Texto style={styles.price} >
+                {price}
+            </Texto>
+            <Button texto={button} style={styles.button} onPress={() => {console.log("Click")}} />
         </>
     )
 }
@@ -58,16 +57,6 @@ price: {
     marginTop: 8
 },
 button: {
-    marginTop: 16,
-    backgroundColor: "#2A9F85",
-    paddingVertical: 16,
-    borderRadius: 6
-},
-textButton: {
-    textAlign: "center",
-    color: "#ffffff",
-    fontSize: 16,
-    lineHeight: 26,
-    fontWeight: "bold"
+    marginTop: 16
 }
 });
