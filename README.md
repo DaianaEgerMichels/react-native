@@ -14,6 +14,6 @@ Frontend application using Expo to create the project in React-Native.
 ### Images of the application:
 #
 
-Top: 
+View: 
 
 <img src="./assets/app.png"/>
