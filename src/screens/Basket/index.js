@@ -1,18 +1,20 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { ScrollView, StyleSheet, View } from "react-native";
 
 import Top from "./components/Top";
 import Details from "./components/Details";
+import Items from "./components/Items";
 
 
-export default function Basket({top, details}) {
+export default function Basket({top, details, items}) {
     return (
-    <>
+    <ScrollView>
         <Top {...top}/>
         <View style={styles.basket}>
             <Details {...details}/>
+            <Items {...items}/>
         </View>
-    </>
+    </ScrollView>
     ) 
 }
 
